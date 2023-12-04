@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.container {
+  border-radius: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+  overflow: hidden;
+  width: 500px;
+}
+
+.form {
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(58, 1, 109, 0.35);
+  background: rgba(212, 202, 225, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(249, 232, 51, 1) 0%,
+    rgba(250, 196, 59, 1) 100.2%
+  );
+  top: -20px;
+  left: -20px;
+}
+
+.form::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(to top, #9575e0 0%, #f08bd4 100%);
+  bottom: -20px;
+  right: -20px;
+  z-index: -1;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.form-control input:focus {
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control small {
+  font-family: sans-serif;
+  font-weight: 500;
+  visibility: hidden;
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.header {
+  background-color: #9599e2;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.form .btn {
+  background-color: #9599e2;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  display: block;
+  font-size: 1.4rem;
+  padding: 4px 0;
+  width: 100%;
+  transition: all 1s linear;
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Using Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" style="text-transform: capitalize;" autocomplete="off" name="username" id="username"
+                    placeholder="Enter Your Username">
+                <small></small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" autocomplete="off" placeholder="Enter Your Email">
+                <small></small>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" autocomplete="off" id="phone" placeholder="Enter Phone Number">
+                <small></small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" autocomplete="off" id="password" placeholder="Enter password">
+                <small></small>
+            </div>
+
+            <div class="form-control">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" name="cpassword" autocomplete="off" id="cpassword" placeholder="Enter Username">
+                <small></small>
+            </div>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
